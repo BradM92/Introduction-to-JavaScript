@@ -252,9 +252,12 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(KMReceived){
   /*add your code here*/
+  const milesConv= KMReceived *.621371;
+  return milesConv;
 }
+console.log(miles(52));
 
 
 
@@ -266,10 +269,12 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
+function feet(CMReceived){
   /*add your code here*/
+  const FeetConv = CMReceived * .0328084;
+  return FeetConv;
 }
-
+console.log(feet(88));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -282,9 +287,15 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
+function annoyingSong(AnnoyingBottles){
       /*add your code here*/
+      TotalAnnoyingBottles =Number(AnnoyingBottles)
+      while(TotalAnnoyingBottles>0 && TotalAnnoyingBottles<100){
+        console.log(`${TotalAnnoyingBottles} bottles of soda on the wall, ${TotalAnnoyingBottles} bottles of soda, take one down pass it around ${TotalAnnoyingBottles-1} bottles of soda on the wall`);
+        TotalAnnoyingBottles= TotalAnnoyingBottles-1;
+      }
 }
+console.log(annoyingSong("30"))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
