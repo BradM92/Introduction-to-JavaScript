@@ -80,10 +80,14 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply(num1d1,num1d12){
   /*add your code here*/
+  let newNum = num1d1*num1d12;
+  return newNum;
 }
-
+let num1d1A = 7;
+let num1d1B = 5;
+console.log(multiply(num1d1A,num1d1B));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -96,9 +100,13 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
+function dogYears(humanAge){
   /*add your code here*/
+  ageInDog = humanAge*7;
+  return ageInDog
 }
+let humanAgeReal = 29;
+console.log(dogYears(humanAgeReal));
 
 
 
