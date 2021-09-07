@@ -64,6 +64,10 @@ Do the following:
    HINT: look up the Number method
 */
 
+ var string1C = "1999";
+ console.log(`this is a string ${string1C}`)
+ console.log(`this is a number ${Number(string1C)}`);
+
 
 
 
