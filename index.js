@@ -20,7 +20,14 @@ Do the following:
    HINT: no function required
 */
 
-
+const votingAge = 18;
+let currentAge = 29;
+if(currentAge>= votingAge){
+  console.log(true);
+}
+else{
+  console.log(false)
+} 
 
 /*
 Task 1b - Values
@@ -32,7 +39,16 @@ Do the following:
 
    HINT: no function required
 */
+let var1b1=2;
+let var1b2=5;
 
+if(var1b1 <= var1b2){
+  var1b1= 7;
+  console.log(var1b1)
+}
+else{
+  console.log('number error');
+}
 
 
 
