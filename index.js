@@ -137,9 +137,44 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
+function hungryDog(hungryDogWeight, hungryDogAge){
   /*add your code here*/
+  let feedAmount = 0;
+  if(hungryDogWeight>14 && hungryDogAge>=1){
+    feedAmount = hungryDogWeight * .02;
+    return(`dog needs this much food total: ${feedAmount}`);
+  }
+  else if(hungryDogWeight<15 && hungryDogWeight>=11 && hungryDogAge>=1){
+    feedAmount = hungryDogWeight * .03;
+    return(`dog needs this much food total: ${feedAmount}`);
+  }
+  else if(hungryDogWeight>=6 && hungryDogWeight<11 && hungryDogAge>=1){
+  feedAmount = hungryDogWeight * .04;
+  return(`dog needs this much food total: ${feedAmount}`);
 }
+else if(hungryDogWeight>=1 && hungryDogWeight<6 && hungryDogAge>=1){
+  feedAmount = hungryDogWeight * .05;
+  return(`dog needs this much food total: ${feedAmount}`);
+}
+else if(hungryDogAge<1 && hungryDogAge> .5){
+feedAmount = hungryDogWeight * .04;
+  return(`dog needs this much food total: ${feedAmount}`);
+
+}
+else if(hungryDogAge<.5 && hungryDogAge>0){
+feedAmount = hungryDogWeight * .05;
+  return(`dog needs this much food total: ${feedAmount}`);
+
+}
+else if(hungryDogAge<.3){
+feedAmount = hungryDogWeight * .10;
+  return(`dog needs this much food total: ${feedAmount}`);
+}
+
+}
+
+
+console.log(hungryDog(15,.3));
 
 
 
