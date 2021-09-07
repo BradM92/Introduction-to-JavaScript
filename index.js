@@ -198,11 +198,47 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+let compChoiceRPS = Math.ceil(Math.random()*3);
+/* testing global variable  console.log(compChoiceRPS);*/
 function game(user, computer){
+  if(user= 'rock' && computer === 3){
+    console.log('you win!');
+  }
+  else if(user= 'rock' && computer === 2){
+    console.log('you lose!');
+  }
+  else if(user= 'rock' && computer === 1){
+    console.log('its a tie')
+  }
+  else if(user= 'paper' && computer === 1)
+  {
+    console.log('ypu win!');
+  }
+  else if(user= 'paper' && computer === 3){
+    console.log('you lose!');
+  }
+  else if(user= 'paper' && computer === 2){
+    console.log('its a tie')
+  }
+  else if(user = 'sciscors' && computer == 1){
+    console.log('you lose');
+  }
+  else if(user= 'sciscors' && computer === 2){
+    console.log('you win!');
+  }
+  else if(user = 'sciscors' && computer === 3){
+    console.log('its a tie');
+  }
+  else{
+    console.log('start a game')
+  }
+
   /*add your code here*/
 }
 
+console.log(compChoiceRPS);
+let mychoiceRPS = "none";
+game(mychoiceRPS= 'rock',compChoiceRPS);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
