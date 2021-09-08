@@ -1,8 +1,8 @@
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
-/*MAKE SURE TO RETURN ALL OF THE ANSWERS INSIDE OF A FUNCTION (tasks 1d through task 7), IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
+/*MAKE SURE TO RETURN ALL OF THE ANSWERS INSIDE OF A FUNCTION (tasks 1d through task 7), IF YOU DON'T, THE AUTO GRADER WILL NOT WORK*/
 
-// task 1a, 1b, and 1c are not autograded
+// task 1a, 1b, and 1c are not auto graded
 
 /*
 When doing these tasks, we recommend using console.log to test the output of your code to make sure it works correctly.
@@ -201,44 +201,75 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 let compChoiceRPS = Math.ceil(Math.random()*3);
 /* testing global variable  console.log(compChoiceRPS);*/
 function game(user, computer){
-  if(user= 'rock' && computer === 3){
-    console.log('you win!');
-  }
-  else if(user= 'rock' && computer === 2){
-    console.log('you lose!');
-  }
-  else if(user= 'rock' && computer === 1){
-    console.log('its a tie')
-  }
-  else if(user= 'paper' && computer === 1)
-  {
-    console.log('ypu win!');
-  }
-  else if(user= 'paper' && computer === 3){
-    console.log('you lose!');
-  }
-  else if(user= 'paper' && computer === 2){
-    console.log('its a tie')
-  }
-  else if(user = 'sciscors' && computer == 1){
-    console.log('you lose!');
-  }
-  else if(user= 'sciscors' && computer === 2){
-    console.log('you win!');
-  }
-  else if(user = 'sciscors' && computer === 3){
-    console.log('its a tie');
-  }
-  else{
-    console.log('start a game')
-  }
-
   /*add your code here*/
+//   if(user=== 'rock' && computer === 3){
+//     return("you win!");
+//   }
+//   else if(user=== 'rock' && computer === 2){
+//     return("you lose!");
+//   }
+//   else if(user=== 'rock' && computer === 1){
+//     return("it's a tie");
+//   }
+//   else if(user=== 'paper' && computer === 1){
+//     return("you win!");
+//   }
+//   else if(user=== 'paper' && computer === 3){
+//     return("you lose!");
+//   }
+//   else if(user=== 'paper' && computer === 2){
+//     return("it's a tie");
+//   }
+//   else if(user ==='scissors' && computer === 1){
+//     return("you lose!");
+//   }
+//   else if(user==='scissors' && computer === 2){
+//     return("you win!");
+//   }
+//   else if(user ==='scissors' && computer === 3){
+//     return("it's a tie");
+//   }
+
+// }
+
+// console.log(compChoiceRPS);
+
+// console.log(game('rock',compChoiceRPS));
+// console.log(compChoiceRPS);
+
+// console.log(game('rock',compChoiceRPS));
+
+
+if(user=== 'rock' && computer === 'paper'){
+  return("you lose!");
+}
+else if(user=== 'rock' && computer === 'scissors'){
+  return("you lose!");
+}
+else if(user=== 'rock' && computer === 'rock'){
+  return("it's a tie");
+}
+else if(user=== 'paper' && computer === 'rock'){
+  return("you win!");
+}
+else if(user=== 'paper' && computer === 'scissors'){
+  return("you lose!");
+}
+else if(user=== 'paper' && computer === 'paper'){
+  return("it's a tie");
+}
+else if(user ==='scissors' && computer === 'rock'){
+  return("you lose!");
+}
+else if(user==='scissors' && computer === 'paper'){
+  return("you win!");
+}
+else if(user ==='scissors' && computer === 'scissors'){
+  return("it's a tie");
 }
 
-console.log(compChoiceRPS);
-let mychoiceRPS = "none";
-game(mychoiceRPS= 'rock',compChoiceRPS);
+}
+console.log(game('rock','paper'))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -248,14 +279,14 @@ game(mychoiceRPS= 'rock',compChoiceRPS);
 /*
 Using the miles function below do the following:
 1. Receive a number of kilometers
-2. Convert the number of kiolmeters received to miles
+2. Convert the number of Kilometers received to miles
 3. Return the number of miles
 */
 
 function miles(KMReceived){
   /*add your code here*/
-  const milesConv= KMReceived *.621371;
-  return milesConv;
+  const milesConvert= KMReceived *.621371;
+  return milesConvert;
 }
 console.log(miles(52));
 
@@ -271,8 +302,8 @@ Using the feet function below do the following:
 
 function feet(CMReceived){
   /*add your code here*/
-  const FeetConv = CMReceived * .0328084;
-  return FeetConv;
+  let FeetConvert = CMReceived * 0.032808;
+  return FeetConvert;
 }
 console.log(feet(88));
 
@@ -289,13 +320,13 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(AnnoyingBottles){
       /*add your code here*/
-       let TotalAnnoyingBottles =Number(AnnoyingBottles)
-      while(TotalAnnoyingBottles>0 && TotalAnnoyingBottles<100){
-        console.log(`${TotalAnnoyingBottles} bottles of soda on the wall, ${TotalAnnoyingBottles} bottles of soda, take one down pass it around ${TotalAnnoyingBottles-1} bottles of soda on the wall`);
-        TotalAnnoyingBottles= TotalAnnoyingBottles-1;
+       
+      while(AnnoyingBottles>0 && AnnoyingBottles<100){
+        return(`${AnnoyingBottles} bottles of soda on the wall, ${AnnoyingBottles} bottles of soda, take one down pass it around ${AnnoyingBottles-1} bottles of soda on the wall`);
+        AnnoyingBottles= AnnoyingBottles-1;
       }
 }
-console.log(annoyingSong("30"))
+console.log(annoyingSong(30));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
