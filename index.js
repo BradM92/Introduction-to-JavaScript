@@ -140,41 +140,41 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 function hungryDog(hungryDogWeight, hungryDogAge){
   /*add your code here*/
   let feedAmount = 0;
-  if(hungryDogWeight>14 && hungryDogAge>=1){
+  if(hungryDogWeight>=15 && hungryDogAge>=1){
     feedAmount = hungryDogWeight * .02;
-    return(`dog needs this much food total: ${feedAmount}`);
+    return(feedAmount);
   }
   else if(hungryDogWeight<15 && hungryDogWeight>=11 && hungryDogAge>=1){
     feedAmount = hungryDogWeight * .03;
-    return(`dog needs this much food total: ${feedAmount}`);
+    return(feedAmount);
   }
   else if(hungryDogWeight>=6 && hungryDogWeight<11 && hungryDogAge>=1){
   feedAmount = hungryDogWeight * .04;
-  return(`dog needs this much food total: ${feedAmount}`);
+  return(feedAmount);
 }
 else if(hungryDogWeight>=1 && hungryDogWeight<6 && hungryDogAge>=1){
   feedAmount = hungryDogWeight * .05;
-  return(`dog needs this much food total: ${feedAmount}`);
+  return(feedAmount);
 }
-else if(hungryDogAge<1 && hungryDogAge> .5){
+else if(hungryDogAge<1 && hungryDogAge> 0.5){
 feedAmount = hungryDogWeight * .04;
-  return(`dog needs this much food total: ${feedAmount}`);
+return(feedAmount);
 
 }
-else if(hungryDogAge<.5 && hungryDogAge>0){
+else if(hungryDogAge<0.5 && hungryDogAge>.35){
 feedAmount = hungryDogWeight * .05;
-  return(`dog needs this much food total: ${feedAmount}`);
+return(feedAmount);
 
 }
-else if(hungryDogAge<.3){
+else if(hungryDogAge<.35){
 feedAmount = hungryDogWeight * .10;
-  return(`dog needs this much food total: ${feedAmount}`);
+return(feedAmount);
 }
 
 }
 
 
-console.log(hungryDog(15,.3));
+console.log(hungryDog(16,.33));
 
 
 
