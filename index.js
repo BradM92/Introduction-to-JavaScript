@@ -102,7 +102,7 @@ Do the following:
 
 function dogYears(humanAge){
   /*add your code here*/
-  ageInDog = humanAge*7;
+  let ageInDog = humanAge*7;
   return ageInDog
 }
 let humanAgeReal = 29;
@@ -221,7 +221,7 @@ function game(user, computer){
     console.log('its a tie')
   }
   else if(user = 'sciscors' && computer == 1){
-    console.log('you lose');
+    console.log('you lose!');
   }
   else if(user= 'sciscors' && computer === 2){
     console.log('you win!');
@@ -289,7 +289,7 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(AnnoyingBottles){
       /*add your code here*/
-      TotalAnnoyingBottles =Number(AnnoyingBottles)
+       let TotalAnnoyingBottles =Number(AnnoyingBottles)
       while(TotalAnnoyingBottles>0 && TotalAnnoyingBottles<100){
         console.log(`${TotalAnnoyingBottles} bottles of soda on the wall, ${TotalAnnoyingBottles} bottles of soda, take one down pass it around ${TotalAnnoyingBottles-1} bottles of soda on the wall`);
         TotalAnnoyingBottles= TotalAnnoyingBottles-1;
@@ -316,19 +316,19 @@ Using the grade function below do the following:
 function grade(gradeSent){
 /*Your Code here */
 if(gradeSent>89 && gradeSent<= 100){
-  return('you get an A')
+  return('you got an A')
 }
 else if(gradeSent>79 && gradeSent<90){
-  return('you get a B');
+  return('you got a B');
 }
 else if(gradeSent>69 && gradeSent<80){
-  return('you get a C');
+  return('you got a C');
 }
 else if(gradeSent>59 && gradeSent<70){
-  return('you get a D');
+  return('you got a D');
 }
 else if(gradeSent<60){
-  return('you get a F');
+  return('you got an F');
 }
 }
 console.log(grade(95));
