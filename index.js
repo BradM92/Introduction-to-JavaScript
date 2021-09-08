@@ -244,7 +244,7 @@ if(user=== 'rock' && computer === 'paper'){
   return("you lose!");
 }
 else if(user=== 'rock' && computer === 'scissors'){
-  return("you lose!");
+  return("you win!");
 }
 else if(user=== 'rock' && computer === 'rock'){
   return("it's a tie");
@@ -302,7 +302,7 @@ Using the feet function below do the following:
 
 function feet(CMReceived){
   /*add your code here*/
-  let FeetConvert = CMReceived * 0.032808;
+  let FeetConvert = CMReceived / 30.48;
   return FeetConvert;
 }
 console.log(feet(88));
